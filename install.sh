@@ -3,8 +3,8 @@ interfaceWifi=wlan0
 interfaceWired=eth0
 ipAddress=10.0.0.200/24
 	
-## Change over to systemd-networkd
-## https://raspberrypi.stackexchange.com/questions/108592
+# Change over to systemd-networkd
+# Refer to https://raspberrypi.stackexchange.com/questions/108592
 # Uninstall classic networking
 apt --autoremove -y purge ifupdown dhcpcd5 isc-dhcp-client isc-dhcp-common rsyslog
 apt-mark hold ifupdown dhcpcd5 isc-dhcp-client isc-dhcp-common rsyslog raspberrypi-net-mods openresolv
