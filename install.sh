@@ -30,7 +30,6 @@ cat > /etc/systemd/network/08-${interfaceWifi}-CLI.network <<-EOF
 	Name=$interfaceWifi
 	[Network]
 	DHCP=yes
-	LinkLocalAddressing=yes
 	MulticastDNS=yes
 EOF
 		
@@ -42,7 +41,6 @@ cat > /etc/systemd/network/12-${interfaceWifi}-AP.network <<-EOF
 	IPForward=yes
 	IPMasquerade=yes
 	DHCPServer=yes
-	LinkLocalAddressing=yes
 	MulticastDNS=yes
 	[DHCPServer]
 	DNS=84.200.69.80 84.200.70.40 1.1.1.1
