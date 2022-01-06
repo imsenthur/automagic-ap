@@ -1,5 +1,5 @@
 #!/bin/bash
-# https://raspberrypi.stackexchange.com/questions/100195
+# Refer to https://raspberrypi.stackexchange.com/questions/100195
 interfaceWifi=wlan0
 interfaceWired=eth0
 timeout=2m
