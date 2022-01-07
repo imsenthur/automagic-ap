@@ -23,7 +23,7 @@ configure_ap () {
 
 ############################################
 
-# Configuring Client mode
+# Configuring Client (CLI) mode
 
 configure_client () {
 	if [ -e $networkconf~ ] && wpa_cli -i$wifi status | grep -q "mode=station"; then
