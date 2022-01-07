@@ -68,7 +68,7 @@ chmod +x /usr/local/sbin/automagic-ap
 if [ ! -f /etc/systemd/system/wpa_cli@${wifi}.service ] ; then
 	cat > /etc/systemd/system/wpa_cli@${wifi}.service <<-EOF
 		[Unit]
-		Description=Wpa_cli to Automatically Create an Accesspoint if no Client Connection is Available
+		Description=automagic-ap creates an wireless access point if known networks cannot be found.
 		After=wpa_supplicant@%i.service
 		BindsTo=wpa_supplicant@%i.service
 		[Service]
