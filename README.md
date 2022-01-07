@@ -11,5 +11,5 @@ A shell script for Raspbian OS to create a wireless access point if no known net
       - Access Point SSID: `NeurobionicsRPi`
       - Access Point Passphrase: `neurobionics`
  
-- Searches for known network(s) again if no devices are connected to the Access Point after a timeout *(Default: 30 seconds)*.
+- Searches for known network(s) again if no devices are connected to the Access Point after a timeout *(30 seconds)*.
 - If an ethernet connection is detected, the Raspberry Pi acts as a WiFi router.
