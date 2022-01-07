@@ -97,6 +97,7 @@ case "$2" in
 
 	CONNECTED)
 		configure_client
+		python /etc/startup_mailer.py
 		;;
 
 	AP-STA-DISCONNECTED)
